@@ -51,9 +51,9 @@ function ShowList() {
               flexDirection: 'row',
               justifyContent: 'space-between',
             }}>
-            <Button title="Add" />
-            <Button title="Add" />
-            <Button title="Add" />
+            <Button title="DETAIL" />
+            <Button title="ADD" />
+            <Button title="DELETE" />
           </View>
         </View>
       </View>
