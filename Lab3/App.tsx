@@ -25,9 +25,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import ShowList from './Products';
+import ShowDetailProduct from './Product_Detail';
 
 function App() {
-  return <ShowList></ShowList>;
+  return <ShowDetailProduct></ShowDetailProduct>;
 }
 
 const styles = StyleSheet.create({
