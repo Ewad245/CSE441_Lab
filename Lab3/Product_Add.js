@@ -1,7 +1,7 @@
 import { Button, Text, TextInput, Alert, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useEffect, useState } from 'react';
-function DisplayAddScreen() {
+function Product_Add() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
@@ -33,7 +33,7 @@ function DisplayAddScreen() {
     Alert.alert('Add sucessfull');
   };
   return (
-    <SafeAreaView>
+    <View>
       <View style={{ marginBottom: '1em' }}>
         <Text style={{ fontWeight: 'bold', color: 'blue' }}>Add a product</Text>
         <Text style={{ fontWeight: 'bold' }}>Title</Text>
@@ -74,7 +74,7 @@ function DisplayAddScreen() {
           onChangeText={text => setImages(text)}></TextInput>
       </View>
       <Button title="Submit" onPress={handleSubmit}></Button>
-    </SafeAreaView>
+    </View>
   );
 }
-export default DisplayAddScreen;
+export default Product_Add;

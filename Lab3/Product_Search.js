@@ -1,11 +1,11 @@
 import { Button, TextInput, Alert, View, FlatList, Image } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Avatar, Card, Text } from 'react-native-paper';
 import {
     StyleSheet
 } from 'react-native';
 import { useEffect, useState } from 'react';
-function SearchBox() {
+function ProductSearch() {
     const [data, setData] = useState([]);
     const [value, setValue] = useState('');
     let filePath = 'https://dummyjson.com/products';
@@ -49,14 +49,14 @@ function SearchBox() {
         );
     };
     return (
-        <SafeAreaView>
+        <View>
             <View>
                 <Text>Search Products</Text>
                 <TextInput placeholder='Enter your name product' onChangeText={text => setValue(text)}></TextInput>
                 <Button title='SEARCH' onPress={searchProduct} />
             </View>
             <FlatList data={data} renderItem={renderItem} />
-        </SafeAreaView>
+        </View>
     );
 }
 const styles = StyleSheet.create({
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
         padding: 10
     }
 });
-export default SearchBox;
+export default ProductSearch;

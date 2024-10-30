@@ -1,13 +1,8 @@
 import { useEffect, useState } from 'react';
 import { FlatList, View, Text, Image, ScrollView } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Button } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import {
-  responsiveHeight,
-  responsiveWidth,
-  responsiveFontSize,
-} from 'react-native-responsive-dimensions';
-function ShowList() {
+function ProductList() {
   const [data, setData] = useState([]);
   const filePath = 'https://dummyjson.com/products/';
   useEffect(() => {
@@ -60,9 +55,9 @@ function ShowList() {
     );
   };
   return (
-    <SafeAreaView>
+    <View>
       <FlatList data={data} renderItem={renderItem} />
-    </SafeAreaView>
+    </View>
   );
 }
-export default ShowList;
+export default ProductList;
