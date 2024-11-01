@@ -1,7 +1,7 @@
-import { View } from 'react-native';
-import { Avatar, Card, Text, Button } from 'react-native-paper';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { useEffect, useState } from 'react';
+import {View} from 'react-native';
+import {Avatar, Card, Text, Button} from 'react-native-paper';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import {useEffect, useState} from 'react';
 function ProductDetail() {
   const [data, setData] = useState([]);
   const filePath = 'https://dummyjson.com/products/2';
@@ -27,7 +27,7 @@ function ProductDetail() {
         <Card.Content>
           <Text variant="titleMedium">Product Detail</Text>
         </Card.Content>
-        <Card.Cover source={{ uri: data.thumbnail }} />
+        <Card.Cover source={{uri: data.thumbnail}} />
         <Card.Content>
           <Text variant="titleLarge">Title: {data.title}</Text>
           <Text variant="bodyMedium">Description: {data.description}</Text>
