@@ -124,19 +124,133 @@ export const Styles = StyleSheet.create({
     color: '#fff',
     fontSize: 24,
   },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    padding: 12,
-    borderRadius: 8,
-    marginBottom: 16,
-  },
   loyaltyIcon: {
     opacity: 0.8,
   },
-  buttonText: {
-    color: '#fff',
+  listContainer: {
+    padding: 16,
+  },
+  transactionCard: {
+    backgroundColor: 'white',
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 12,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    elevation: 2,
+  },
+  transactionContent: {
+    flex: 1,
+  },
+  transactionId: {
+    fontSize: 14,
+    fontWeight: '500',
+    marginBottom: 8,
+  },
+  serviceText: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 4,
+  },
+  customerText: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 4,
+  },
+  cancelledText: {
+    color: 'red',
+    marginTop: 4,
+  },
+  priceText: {
     fontSize: 16,
+    fontWeight: '500',
+    color: '#f06292',
+  },
+  detailContainer: {
+    flex: 1,
+    padding: 16,
+  },
+  section: {
+    backgroundColor: 'white',
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 16,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#f06292',
+    marginBottom: 16,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  infoLabel: {
+    color: '#666',
+  },
+  infoValue: {
+    fontWeight: '500',
+  },
+  serviceRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  serviceInfo: {
+    flex: 1,
+  },
+  serviceName: {
+    fontSize: 14,
+    marginBottom: 4,
+  },
+  serviceQuantity: {
+    fontSize: 12,
+    color: '#666',
+  },
+  servicePrice: {
+    fontWeight: '500',
+  },
+  totalRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 16,
+    paddingTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: '#eee',
+  },
+  totalLabel: {
+    fontWeight: '500',
+  },
+  totalAmount: {
+    fontWeight: '500',
+  },
+  totalPaymentRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 16,
+    paddingTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: '#eee',
+  },
+  totalPaymentLabel: {
+    fontWeight: '500',
+  },
+  totalPaymentAmount: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#f06292',
+  },
+  logoutButton: {
+    marginTop: 30,
+    backgroundColor: '#ff4d4d',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  logoutText: {
+    color: 'white',
     fontWeight: 'bold',
   },
 });
