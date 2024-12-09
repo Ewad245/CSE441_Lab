@@ -34,7 +34,7 @@ const TransactionDetailScreen = ({route, navigation}) => {
         throw new Error('Failed to delete transaction');
       }
 
-      Alert.alert('Success', 'Customer deleted successfully');
+      Alert.alert('Success', 'Transaction deleted successfully');
       navigation.goBack();
     } catch (error) {
       Alert.alert('Error', error.message);
